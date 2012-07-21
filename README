@@ -1,0 +1,32 @@
+
+X chatter is a Command Line chat utility . It can be used to communicate between a client and a server
+
+The utility has two parts , 
+
+1) Server part
+2) Client Part
+
+
+1) Server part , runs on the server machine
+
+	compiling :
+		javac -Xlint:deprecation Server.java
+	running:
+		java Server port_number nickname
+
+	eg:
+		java Server 8000 cobra
+
+2) Client part , runs on any machine , and connect to server to start communication
+
+	compiling:
+		javac -Xling:deprecation Client.java 
+	running:
+		java Client machine server_port nickname
+
+	eg:
+		java localhost 8000 vijeen
+
+once the connecion between the client and server is established then communicaion can be started .
+
+
